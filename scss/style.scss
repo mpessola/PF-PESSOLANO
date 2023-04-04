@@ -1,3 +1,5 @@
+
+/* RESET */
 * {
     margin: 0px;
     padding: 0px;
@@ -31,13 +33,26 @@ body {
 .seccion1-servicio, .seccion2-servicio, .footer-container {
     border: none;
 }
-
 #check-menu, label.menu {
     display: none;
 }
 
 /* FLEXBOX */
-
+.cabecera {
+    grid-area: cabecera;
+    font-family: "terminator real nfi";
+    padding-top: 60px;
+    padding-left: 30px;
+    font-size: 1.9em;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Image/Bosque-familia.jpg');
+    background-position: 0;
+    background-size: cover;
+h1 {
+    color: green;
+}
+}
 .navbar {
     grid-area: navbar;
     background-color: green;
@@ -47,39 +62,32 @@ body {
     justify-content: center;
     position: sticky;
     top: 0;
-}
-.navbar ul {
+ul {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 100%; 
+    height: 100%;
 }
-.navbar ul .nav-item {
+li {
     padding: 0 20px;
 }
-.nav-item a {
+a {
     height: 100%;
     color: white;
     text-decoration: none;
-
 }
-.nav-item:hover {
-    background-color: rgb(54, 88, 2);
-    border-radius: 30px;
+/* ver como agregar pseudoclase "hover" */
 }
-h2 {
-    margin-top: 10px;
-    font-size: 2em;
-}
-h3 {
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 140%;
+.seccion2 {
+    h2 {
+        margin-top: 10px;
+        font-size: 2em;
+        text-align: center;
+    }
 }
 
 /* ESTILOS INICIO */ 
-
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -93,21 +101,6 @@ h3 {
     "seccion3 seccion3 seccion3 seccion3"
     "articulo articulo articulo articulo"
     "footer-container footer-container footer-container footer-container";
-}
-.cabecera {
-    grid-area: cabecera;
-    font-family: "terminator real nfi";
-    padding-top: 60px;
-    padding-left: 30px;
-    font-size: 1.9em;
-    width: 100%;
-    height: 100%;
-    background-image: url('../Image/Bosque-familia.jpg');
-    background-position: 0;
-    background-size: cover;
-}
-.cabecera h1 {
-    color: green;
 }
 .navbar {
     grid-area: navbar;
@@ -152,6 +145,9 @@ h3 {
 .articulo {
     grid-area: articulo;
     padding: 10px;
+h3 {
+    text-align: center;
+    }
 }
 .footer-container {
     grid-area: footer-container;
@@ -162,7 +158,6 @@ h3 {
 }
 
 /* ESTILOS NOSOTROS */
-
 .grid-nosotros {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -176,18 +171,6 @@ h3 {
     "seccion2-nosotros seccion2-nosotros seccion3-nosotros seccion4-nosotros"
     "seccion5-nosotros seccion5-nosotros seccion5-nosotros seccion5-nosotros"
     "footer-container footer-container footer-container footer-container";
-}
-.cabecera {
-    grid-area: cabecera;
-    font-family: "terminator real nfi";
-    padding-top: 60px;
-    padding-left: 30px;
-    font-size: 1.9em;
-    width: 100%;
-    height: 100%;
-    background-image: url('../Image/Bosque-familia.jpg');
-    background-position: 0;
-    background-size: cover;
 }
 .navbar {
     grid-area: navbar;
@@ -208,7 +191,6 @@ h3 {
 .seccion3-nosotros {
     grid-area: seccion3-nosotros;
     padding-top: 50px;
-    
 }
 .seccion4-nosotros {
     grid-area: seccion4-nosotros;
@@ -216,6 +198,10 @@ h3 {
 }
 .seccion5-nosotros {
     grid-area: seccion5-nosotros;
+p {
+    text-align: justify;
+    padding: 0 20px;
+}
 }
 .footer-container {
     grid-area: footer-container;
@@ -224,12 +210,8 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-P {
-    text-align: justify;
-}
 
 /* ESTILOS SERVICIOS */
-
 .grid-servicio {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -240,18 +222,6 @@ P {
     "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio"
     "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio"
     "footer-container footer-container footer-container footer-container";
-}
-.cabecera {
-    grid-area: cabecera;
-    font-family: "terminator real nfi";
-    padding-top: 60px;
-    padding-left: 30px;
-    font-size: 1.9em;
-    width: 100%;
-    height: 100%;
-    background-image: url('../Image/Bosque-familia.jpg');
-    background-position: 0;
-    background-size: cover;
 }
 .navbar {
     grid-area: navbar;
@@ -284,18 +254,6 @@ P {
     "seccion1-contacto seccion1-contacto seccion1-contacto seccion1-contacto"
     "seccion2-contacto seccion2-contacto seccion2-contacto seccion2-contacto"
     "footer-container footer-container footer-container footer-container";
-}
-.cabecera {
-    grid-area: cabecera;
-    font-family: "terminator real nfi";
-    padding-top: 60px;
-    padding-left: 30px;
-    font-size: 1.9em;
-    width: 100%;
-    height: 100%;
-    background-image: url('../Image/Bosque-familia.jpg');
-    background-position: 0;
-    background-size: cover;
 }
 .navbar {
     grid-area: navbar;
@@ -338,76 +296,4 @@ P {
     color: white;
     align-items: center;
     justify-content: center;
-}
-
-/* CLIENTES PENDIENTE */
-
-/* RESGISTRARME PENDIENTE */
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 600px) {
-    .navbar ul {
-        display: none;
-        position: absolute;
-        height: 100vh;
-        top: 50px;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    label.menu {
-        display: block;
-        font-size: 1.7em;
-        color: white;
-        cursor: pointer;
-    }
-#chek-menu:checked ~ul {
-        display: block;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: 120px 52px 370px 100px 210px 1000px 510px 100px;
-        grid-template-areas:
-        "cabecera cabecera cabecera cabecera"
-        "navbar navbar navbar navbar"
-        "seccion1 seccion1 seccion1 seccion1"
-        "seccion2 seccion2 seccion2 seccion2" 
-        "seccion3 seccion3 seccion3 seccion3"
-        "seccion4 seccion4 seccion4 seccion4"
-        "articulo articulo articulo articulo"
-        "footer-container footer-container footer-container footer-container";
-    }
-    .seccion4 {
-        flex-direction: column;
-        width: center;
-    }
-    .articulo {
-        text-align: center;
-    }
-    .grid-nosotros {
-        display: grid-nosotros;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: 120px 52px 80px 420px 230px 160px 750px 100px; 
-        grid-template-areas:
-        "cabecera cabecera cabecera cabecera"
-        "navbar navbar navbar navbar"
-        "seccion1-nosotros seccion1-nosotros seccion1-nosotros seccion1-nosotros"
-        "seccion2-nosotros seccion2-nosotros seccion2-nosotros seccion2-nosotros"
-        "seccion3-nosotros seccion3-nosotros seccion3-nosotros seccion3-nosotros"
-        "seccion4-nosotros seccion4-nosotros seccion4-nosotros seccion4-nosotros"
-        "seccion5-nosotros seccion5-nosotros seccion5-nosotros seccion5-nosotros"
-        "footer-container footer-container footer-container footer-container";
-    }
-    p {
-        text-align: justify;
-    }
-    .seccion3-nosotros {
-        padding-top: 5px;
-    }
-    .seccion4-nosotros {
-        padding-top: 5px;
-    }
 }

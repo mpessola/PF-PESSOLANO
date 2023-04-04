@@ -1,0 +1,308 @@
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+@font-face {
+  font-family: terminator real nfi;
+  src: url(../Fonts/terminator\ real\ nfi.ttf);
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.seccion1, .seccion2, .seccion3, .seccion4, .seccion5, .articulo, .footer-container {
+  border: none;
+}
+
+.cabecera, .navbar, .seccion1-nosotros, .seccion2-nosotros, .seccion3-nosotros, .seccion4-nosotros, .seccion5-nosotros, .footer-container {
+  padding: 10px;
+  border: none;
+}
+
+.seccion1-contacto, .seccion2-contacto, .seccion3-contacto, .footer-container {
+  padding: 10px;
+  border: none;
+}
+
+.seccion1-servicio, .seccion2-servicio, .footer-container {
+  border: none;
+}
+
+#check-menu, label.menu {
+  display: none;
+}
+
+/* FLEXBOX */
+.cabecera {
+  grid-area: cabecera;
+  font-family: "terminator real nfi";
+  padding-top: 60px;
+  padding-left: 30px;
+  font-size: 1.9em;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Image/Bosque-familia.jpg");
+  background-position: 0;
+  background-size: cover;
+}
+.cabecera h1 {
+  color: green;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: green;
+  display: flex;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  /* ver como agregar pseudoclase "hover" */
+}
+.navbar ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.navbar li {
+  padding: 0 20px;
+}
+.navbar a {
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.seccion2 h2 {
+  margin-top: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* ESTILOS INICIO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 220px 52px 370px 80px 280px 110px 255px 100px;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1 seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2 seccion2" "seccion4 seccion4 seccion4 seccion4" "seccion3 seccion3 seccion3 seccion3" "articulo articulo articulo articulo" "footer-container footer-container footer-container footer-container";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.seccion1 {
+  grid-area: seccion1;
+}
+
+.seccion1 div img {
+  background-size: cover;
+}
+
+.seccion2 {
+  grid-area: seccion2;
+  text-align: center;
+}
+
+.seccion3 {
+  grid-area: seccion3;
+  padding: 10px;
+}
+
+.seccion4 {
+  grid-area: seccion4;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.imagen i {
+  font-size: 180px;
+}
+
+.imagen {
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.boton {
+  margin-top: 5px;
+  width: 80%;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(115, 113, 116);
+}
+
+.articulo {
+  grid-area: articulo;
+  padding: 10px;
+}
+.articulo h3 {
+  text-align: center;
+}
+
+.footer-container {
+  grid-area: footer-container;
+  background-color: green;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ESTILOS NOSOTROS */
+.grid-nosotros {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 220px 52px 80px 300px 80px 80px 340px 100px;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-nosotros seccion1-nosotros seccion1-nosotros seccion1-nosotros" "seccion2-nosotros seccion2-nosotros seccion3-nosotros seccion4-nosotros" "seccion2-nosotros seccion2-nosotros seccion3-nosotros seccion4-nosotros" "seccion2-nosotros seccion2-nosotros seccion3-nosotros seccion4-nosotros" "seccion5-nosotros seccion5-nosotros seccion5-nosotros seccion5-nosotros" "footer-container footer-container footer-container footer-container";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.seccion1-nosotros {
+  grid-area: seccion1-nosotros;
+  text-align: center;
+}
+
+.seccion2-nosotros {
+  grid-area: seccion2-nosotros;
+}
+
+.center {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.seccion3-nosotros {
+  grid-area: seccion3-nosotros;
+  padding-top: 50px;
+}
+
+.seccion4-nosotros {
+  grid-area: seccion4-nosotros;
+  padding-top: 50px;
+}
+
+.seccion5-nosotros {
+  grid-area: seccion5-nosotros;
+}
+.seccion5-nosotros p {
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.footer-container {
+  grid-area: footer-container;
+  background-color: green;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ESTILOS SERVICIOS */
+.grid-servicio {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 220px 52px 80px 900px 100px;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio" "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio" "footer-container footer-container footer-container footer-container";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.seccion1-servicio {
+  grid-area: seccion1-servicio;
+  text-align: center;
+}
+
+.seccion2-servicio {
+  grid-area: seccion2-servicio;
+}
+
+.footer-container {
+  grid-area: footer-container;
+  background-color: green;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/* ESTILOS CONTACTOS */
+.grid-contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 220px 52px 80px 500px 100px;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-contacto seccion1-contacto seccion1-contacto seccion1-contacto" "seccion2-contacto seccion2-contacto seccion2-contacto seccion2-contacto" "footer-container footer-container footer-container footer-container";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.seccion1-contacto {
+  grid-area: seccion1-contacto;
+  text-align: center;
+}
+
+.seccion2-contacto {
+  grid-area: seccion2-contacto;
+}
+
+.seccion2-contacto input, textarea {
+  width: 50%;
+  margin: 3px;
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.seccion2-contacto textarea {
+  resize: vertical;
+  height: 200px;
+}
+
+.send-cancel {
+  width: 200px;
+  display: flex;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+.brown {
+  background-color: brown;
+  color: white;
+}
+
+.footer-container {
+  grid-area: footer-container;
+  background-color: green;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

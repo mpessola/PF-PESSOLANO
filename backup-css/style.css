@@ -224,8 +224,8 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-P {
-    text-align: justify;
+p {
+    text-align: center;
 }
 
 /* ESTILOS SERVICIOS */
@@ -319,7 +319,6 @@ P {
     resize: vertical;
     height: 200px;
 }
-
 .send-cancel {
     width: 200px;
     display: flex;
