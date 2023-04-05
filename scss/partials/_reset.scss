@@ -1,0 +1,39 @@
+/* RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+@font-face {
+    font-family: terminator real nfi;
+    src: url(../Fonts/terminator\ real\ nfi.ttf)
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    margin: auto;
+    background-color: rgb(246, 244, 241);
+}
+.seccion1, .seccion2, .seccion3, .seccion4, .seccion5, .articulo, .footer-container {
+    border: none;
+}
+.cabecera, .navbar, .seccion1-nosotros, .seccion2-nosotros, .seccion3-nosotros, .seccion4-nosotros, .seccion5-nosotros, .footer-container {
+    padding: 10px;
+    border: none;
+}
+.seccion1-contacto, .seccion2-contacto, .seccion3-contacto, .footer-container {
+    padding: 10px;
+    border: none;
+}
+.seccion1-servicio, .seccion2-servicio, .footer-container {
+    border: none;
+}
+#check-menu, label.menu {
+    display: none;
+}

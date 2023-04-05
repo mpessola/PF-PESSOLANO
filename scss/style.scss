@@ -1,56 +1,22 @@
 
-/* RESET */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    overflow: auto;
-}
-@font-face {
-    font-family: terminator real nfi;
-    src: url(../Fonts/terminator\ real\ nfi.ttf)
-}
-body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;
-    margin: auto;
-}
-.seccion1, .seccion2, .seccion3, .seccion4, .seccion5, .articulo, .footer-container {
-    border: none;
-}
-.cabecera, .navbar, .seccion1-nosotros, .seccion2-nosotros, .seccion3-nosotros, .seccion4-nosotros, .seccion5-nosotros, .footer-container {
-    padding: 10px;
-    border: none;
-}
-.seccion1-contacto, .seccion2-contacto, .seccion3-contacto, .footer-container {
-    padding: 10px;
-    border: none;
-}
-.seccion1-servicio, .seccion2-servicio, .footer-container {
-    border: none;
-}
-#check-menu, label.menu {
-    display: none;
-}
+@import "partials/variables";
+@import "partials/reset";
 
 /* FLEXBOX */
+
 .cabecera {
     grid-area: cabecera;
     font-family: "terminator real nfi";
-    padding-top: 60px;
+    padding-top: 80px;
     padding-left: 30px;
-    font-size: 1.9em;
-    width: 100%;
-    height: 100%;
+    width: $ancho;
+    height: $alto;
     background-image: url('../Image/Bosque-familia.jpg');
     background-position: 0;
     background-size: cover;
 h1 {
     color: green;
+    font-size: $fontSizeBig;
 }
 }
 .navbar {
@@ -76,8 +42,14 @@ a {
     height: 100%;
     color: white;
     text-decoration: none;
+    padding: 2px;
 }
-/* ver como agregar pseudoclase "hover" */
+a:hover {
+    background-color: rgb(54, 88, 2);
+}
+.active {
+    background-color: rgb(54, 88, 2);
+}
 }
 .seccion2 {
     h2 {
@@ -88,6 +60,7 @@ a {
 }
 
 /* ESTILOS INICIO */ 
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -158,6 +131,7 @@ h3 {
 }
 
 /* ESTILOS NOSOTROS */
+
 .grid-nosotros {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -212,6 +186,7 @@ p {
 }
 
 /* ESTILOS SERVICIOS */
+
 .grid-servicio {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -229,6 +204,7 @@ p {
 .seccion1-servicio {
     grid-area: seccion1-servicio;
     text-align: center;
+    padding-top: 20px;
 }
 .seccion2-servicio {
     grid-area: seccion2-servicio;
@@ -297,3 +273,10 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+
+@import "partials/queries";
+
+
+
+
