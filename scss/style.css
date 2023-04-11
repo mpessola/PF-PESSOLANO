@@ -16,9 +16,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   margin: auto;
   background-color: rgb(246, 244, 241);
+}
+
+.footer-container {
+  grid-area: footer-container;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .seccion1, .seccion2, .seccion3, .seccion4, .seccion5, .articulo, .footer-container {
@@ -35,7 +44,7 @@ body {
   border: none;
 }
 
-.seccion1-servicio, .seccion2-servicio, .footer-container {
+.cabecera, .navbar, .seccion1-servicio, .seccion2-servicio, .seccion3-servicio, .seccion4-servicio, .seccion5-servicio, .footer-container {
   border: none;
 }
 
@@ -164,14 +173,6 @@ body {
   text-align: center;
 }
 
-.footer-container {
-  grid-area: footer-container;
-  background-color: green;
-  color: white;
-  align-items: center;
-  justify-content: center;
-}
-
 /* ESTILOS NOSOTROS */
 .grid-nosotros {
   display: grid;
@@ -215,23 +216,15 @@ body {
 }
 .seccion5-nosotros p {
   text-align: justify;
-  padding: 0 20px;
-}
-
-.footer-container {
-  grid-area: footer-container;
-  background-color: green;
-  color: white;
-  align-items: center;
-  justify-content: center;
+  padding: 0 5px;
 }
 
 /* ESTILOS SERVICIOS */
 .grid-servicio {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: 220px 52px 80px 900px 100px;
-  grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio" "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio" "footer-container footer-container footer-container footer-container";
+  grid-template-rows: 220px 52px 80px 300px 300px 300px 300px 100px;
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio" "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio" "seccion3-servicio seccion3-servicio seccion3-servicio seccion3-servicio" "seccion4-servicio seccion4-servicio seccion4-servicio seccion4-servicio" "seccion5-servicio seccion5-servicio seccion5-servicio seccion5-servicio" "footer-container footer-container footer-container footer-container";
 }
 
 .navbar {
@@ -246,15 +239,22 @@ body {
 
 .seccion2-servicio {
   grid-area: seccion2-servicio;
+  padding: 20px;
 }
 
-.footer-container {
-  grid-area: footer-container;
-  background-color: green;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+.seccion3-servicio {
+  grid-area: seccion3-servicio;
+  padding: 20px;
+}
+
+.seccion4-servicio {
+  grid-area: seccion4-servicio;
+  padding: 20px;
+}
+
+.seccion5-servicio {
+  grid-area: seccion5-servicio;
+  padding: 20px;
 }
 
 /* ESTILOS CONTACTOS */
@@ -305,14 +305,6 @@ body {
 .brown {
   background-color: brown;
   color: white;
-}
-
-.footer-container {
-  grid-area: footer-container;
-  background-color: green;
-  color: white;
-  align-items: center;
-  justify-content: center;
 }
 
 /* MEDIA QUERIES */
@@ -367,8 +359,8 @@ body {
   .grid-servicio {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 180px 52px 80px 500px 100px;
-    grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio" "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio" "footer-container footer-container footer-container footer-container";
+    grid-template-rows: 180px 52px 60px 300px 300px 300px 300px 100px;
+    grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio" "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio" "seccion3-servicio seccion3-servicio seccion3-servicio seccion3-servicio" "seccion4-servicio seccion4-servicio seccion4-servicio seccion4-servicio" "seccion5-servicio seccion5-servicio seccion5-servicio seccion5-servicio" "footer-container footer-container footer-container footer-container";
   }
   .grid-contacto {
     display: grid;

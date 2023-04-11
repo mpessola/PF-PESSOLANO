@@ -122,13 +122,6 @@ h3 {
     text-align: center;
     }
 }
-.footer-container {
-    grid-area: footer-container;
-    background-color: green;
-    color: white;
-    align-items: center;
-    justify-content: center;
-}
 
 /* ESTILOS NOSOTROS */
 
@@ -174,15 +167,8 @@ h3 {
     grid-area: seccion5-nosotros;
 p {
     text-align: justify;
-    padding: 0 20px;
+    padding: 0 5px;
 }
-}
-.footer-container {
-    grid-area: footer-container;
-    background-color: green;
-    color: white;
-    align-items: center;
-    justify-content: center;
 }
 
 /* ESTILOS SERVICIOS */
@@ -190,12 +176,15 @@ p {
 .grid-servicio {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 220px 52px 80px 900px 100px;
+    grid-template-rows: 220px 52px 80px 300px 300px 300px 300px 100px;
     grid-template-areas:
     "cabecera cabecera cabecera cabecera"
     "navbar navbar navbar navbar"
     "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio"
     "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio"
+    "seccion3-servicio seccion3-servicio seccion3-servicio seccion3-servicio"
+    "seccion4-servicio seccion4-servicio seccion4-servicio seccion4-servicio"
+    "seccion5-servicio seccion5-servicio seccion5-servicio seccion5-servicio"
     "footer-container footer-container footer-container footer-container";
 }
 .navbar {
@@ -208,14 +197,19 @@ p {
 }
 .seccion2-servicio {
     grid-area: seccion2-servicio;
+    padding: 20px;
 }
-.footer-container {
-    grid-area: footer-container;
-    background-color: green;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+.seccion3-servicio {
+    grid-area: seccion3-servicio;
+    padding: 20px;
+}
+.seccion4-servicio {
+    grid-area: seccion4-servicio;
+    padding: 20px;
+}
+.seccion5-servicio {
+    grid-area: seccion5-servicio;
+    padding: 20px;
 }
 
 /* ESTILOS CONTACTOS */
@@ -253,7 +247,6 @@ p {
     resize: vertical;
     height: 200px;
 }
-
 .send-cancel {
     width: 200px;
     display: flex;
@@ -266,13 +259,7 @@ p {
     background-color: brown;
     color: white;
 }
-.footer-container {
-    grid-area: footer-container;
-    background-color: green;
-    color: white;
-    align-items: center;
-    justify-content: center;
-}
+
 
 
 @import "partials/queries";

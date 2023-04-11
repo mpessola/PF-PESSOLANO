@@ -16,9 +16,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    align-items: center;
+    align-items: normal;
     margin: auto;
     background-color: rgb(246, 244, 241);
+}
+.footer-container {
+    grid-area: footer-container;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 .seccion1, .seccion2, .seccion3, .seccion4, .seccion5, .articulo, .footer-container {
     border: none;
@@ -31,7 +39,7 @@ body {
     padding: 10px;
     border: none;
 }
-.seccion1-servicio, .seccion2-servicio, .footer-container {
+.cabecera, .navbar, .seccion1-servicio, .seccion2-servicio, .seccion3-servicio, .seccion4-servicio, .seccion5-servicio, .footer-container {
     border: none;
 }
 #check-menu, label.menu {
