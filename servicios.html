@@ -8,6 +8,8 @@
         <meta name="keywords" content="Desinsectacion, Desratizacion, Desinfeccion, Tratamientos Especiales, Desodorizaciones">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
         <link rel="stylesheet" href="./css/bootstrap.css" >
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="./scss/style.css" >
         <title>Servicios</title>
     </head>
@@ -15,35 +17,49 @@
         <main class="grid-servicio">
             <header class="cabecera">
                 <h1>FUMIMAX</h1>
+                <h4>CONTROL INTEGRAL DE PLAGAS</h4>
             </header>
-            <nav class="navbar">
-                <input type="checkbox" id="check-menu"/>
-                <label for="check-menu" class="menu"><i class='bx bx-menu'></i></label>
-                <ul>
-                    <li class="nav-item"><a href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a href="./servicios.html" class="active">Servicios</a></li>
-                    <li class="nav-item"><a href="./contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html" class="active">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <section class="seccion1-servicio">
                 <h2 class="titulo">Nuestros Servicios</h2>       
             </section>
-            <section class="seccion2-servicio">
+            <section class="seccion2-servicio" id="vivienda">
                 <div>
                     <img src="./Image/Vivienda.png" width="250" height="250">
                     <p>Brindamos un servicio de desinfección de ambientes y superficies, que se enfoca en la eliminación de patógenos que pueden generar un riesgo para la salud. Aplicamos agentes químicos desinfectantes seguros que no dañan la salud de las personas, y sanitizamos todo al 100%.</p>
                     <p>El servicio de desinfección puede demorar entre 2 a 5 horas dependiendo el tamaño del lugar a trabajar. Lo primero que haremos será verificar la situación del lugar, determinar los tiempos y formas del servicio de desinfección.</p>
                 </div>
             </section>
-            <section class="seccion3-servicio">
+            <section class="seccion3-servicio" id="hospital">
                 <div>
                     <img src="./Image/Hospital.png" width="250" height="250">
                     <p>La desinfección es un tratamiento contra microorganismos patógenos que a pesar de ser imperceptibles para el ojo humano pueden causar graves enfermedades a los habitantes de las instalaciones infectadas. Además de afectar negativamente la salubridad de los productos alimenticios.</p>
                     <p>Existen distintos tipos de agentes patógenos entre los que se encuentran hongos, virus y bacterias. Teniendo en cuenta la capacidad de transmisión y mutación de estos organismos, <strong>FUMIMAX</strong> mantiene una línea de identificación de la especie y su lugar de procedencia para adaptar la intervención eliminadora a lo que corresponda.</p>
                 </div>
             </section>
-            <section class="seccion4-servicio">
+            <section class="seccion4-servicio" id="escuela">
                 <div>
                     <img src="./Image/Escuela.png" width="250" height="250">
                     <p>Ante la aparición de plagas en instituciones publicas como cucarachas, pulgas, garrapatas, moscas y mosquitos, ofrecemos un procedimiento de erradicación conocido como nebulización y termonebulización. Dicho proceso consiste en la transformación de una solución en gotas muy pequeñas que forman una neblina húmeda capaz de abarcar todos los espacios a fumigar. Además de esta manera el producto puede permanecer más tiempo en el aire prolongando su poder de acción.</p>
@@ -68,5 +84,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </body>
 </html>

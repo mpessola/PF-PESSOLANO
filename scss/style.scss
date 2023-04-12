@@ -15,8 +15,12 @@
     background-position: 0;
     background-size: cover;
 h1 {
-    color: green;
+    color: black;
     font-size: $fontSizeBig;
+}
+h4 {
+    color: rgb(5, 3, 3);
+    font-size: $fontSizeSmall;
 }
 }
 .navbar {
@@ -40,15 +44,14 @@ li {
 }
 a {
     height: 100%;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 2px;
 }
 a:hover {
-    background-color: rgb(54, 88, 2);
-}
-.active {
-    background-color: rgb(54, 88, 2);
+    background-color: rgba(37, 76, 37, 0.757);
+    height: 30px;
+    border-radius: 5px;
 }
 }
 .seccion2 {
@@ -258,6 +261,11 @@ p {
 .brown {
     background-color: brown;
     color: white;
+}
+.mapa {
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-top: 25px;
 }
 
 
