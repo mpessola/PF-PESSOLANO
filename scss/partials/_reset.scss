@@ -18,11 +18,13 @@ body {
     justify-content: center;    
     align-items: normal;
     margin: auto;
-    background-color: rgba(244, 244, 225, 0.524);
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);  /* url('../Image/tecnology.jpg') */
+    background-position: 0;
+    background-size: cover;
 }
 .footer-container {
     grid-area: footer-container;
-    background-color: rgb(43, 42, 42);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
     align-items: center;
     justify-content: center;

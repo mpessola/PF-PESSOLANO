@@ -82,12 +82,20 @@
     .grid-contacto {
         display: grid;
         grid-template-columns: repeat(4, 25%);
-        grid-template-rows: 180px 52px 80px 450px 100px;
+        grid-template-rows: 180px 52px 80px 900px 100px;
         grid-template-areas:
         "cabecera cabecera cabecera cabecera"
         "navbar navbar navbar navbar"
         "seccion1-contacto seccion1-contacto seccion1-contacto seccion1-contacto"
         "seccion2-contacto seccion2-contacto seccion2-contacto seccion2-contacto"
         "footer-container footer-container footer-container footer-container";
+    }
+    .seccion2-contacto {
+        flex-direction: column;
+        width: center;
+    }
+    .mapa {
+        width: 100%;
+        margin: 10px;
     }
 }

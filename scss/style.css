@@ -18,12 +18,14 @@ body {
   justify-content: center;
   align-items: normal;
   margin: auto;
-  background-color: rgba(244, 244, 225, 0.524);
+  background-image: linear-gradient(to right, #DECBA4, #3E5151); /* url('../Image/tecnology.jpg') */
+  background-position: 0;
+  background-size: cover;
 }
 
 .footer-container {
   grid-area: footer-container;
-  background-color: rgb(43, 42, 42);
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: white;
   align-items: center;
   justify-content: center;
@@ -243,22 +245,34 @@ body {
 
 .seccion2-servicio {
   grid-area: seccion2-servicio;
-  padding: 20px;
+  padding: 20px 60px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .seccion3-servicio {
   grid-area: seccion3-servicio;
-  padding: 20px;
+  padding: 20px 40px 20px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .seccion4-servicio {
   grid-area: seccion4-servicio;
-  padding: 20px;
+  padding: 20px 60px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .seccion5-servicio {
   grid-area: seccion5-servicio;
-  padding: 20px;
+  padding: 20px 40px 20px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* ESTILOS CONTACTOS */
@@ -280,15 +294,19 @@ body {
 
 .seccion2-contacto {
   grid-area: seccion2-contacto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .seccion2-contacto input, textarea {
-  width: 50%;
+  width: 95%;
   margin: 3px;
   padding: 5px;
   font-size: 0.9rem;
   border: 1px solid;
   border-radius: 3px;
+  border-color: white;
 }
 
 .seccion2-contacto textarea {
@@ -313,8 +331,10 @@ body {
 
 .mapa {
   border-radius: 5px;
-  margin-left: 3px;
+  margin-left: 10px;
   margin-top: 25px;
+  margin-right: 45px;
+  display: flex;
 }
 
 /* MEDIA QUERIES */
@@ -375,7 +395,15 @@ body {
   .grid-contacto {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 180px 52px 80px 450px 100px;
+    grid-template-rows: 180px 52px 80px 900px 100px;
     grid-template-areas: "cabecera cabecera cabecera cabecera" "navbar navbar navbar navbar" "seccion1-contacto seccion1-contacto seccion1-contacto seccion1-contacto" "seccion2-contacto seccion2-contacto seccion2-contacto seccion2-contacto" "footer-container footer-container footer-container footer-container";
+  }
+  .seccion2-contacto {
+    flex-direction: column;
+    width: center;
+  }
+  .mapa {
+    width: 100%;
+    margin: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
