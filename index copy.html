@@ -11,16 +11,39 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        
+
         <link rel="stylesheet" href="./scss/style.css" >
         <title>Inicio</title>
     </head>
     <body>
         <main class="grid">
             <header class="cabecera">
-                <h1>FUMIMAX</h1>
-                <h4>CONTROL INTEGRAL DE PLAGAS</h4>
+                <h1 class="animate__animated animate__rotateInDownLeft">FUMIMAX</h1>
+                <h4 class="animate__animated animate__rotateInDownLeft">CONTROL INTEGRAL DE PLAGAS</h4>
             </header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span> <!-- icono -->
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html" class="active">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <section class="seccion1">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -53,29 +76,6 @@
                 </button>
                 </div>
             </section>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span> <!-- icono -->
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html" class="active">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
             <section class="seccion2">
                 <h2 class="titulo">COMPROMISO COMERCIAL Y RESPONSABILIDAD SOCIAL</h2>
             </section>
@@ -83,18 +83,22 @@
                     <div class="content-icon">
                         <i class="bx bx-home" style="color: black"></i>
                         <a href="./servicios.html#vivienda"><input type="button" value="VIVIENDAS" class="boton"/></a>
+
                     </div>
                     <div class="content-icon">
                         <i class="bx bx-clinic" style="color: black"></i>
                         <a href="./servicios.html#hospital"><input type="button" value="HOSPITALES" class="boton"/></a>
+                        
                     </div>
                     <div class="content-icon">
                         <i class="bx bxs-institution" style="color: black"></i>
-                        <a href="./servicios.html#escuela"><input type="button" value="ESCUELAS" class="boton"/></a>                   
+                        <a href="./servicios.html#escuela"><input type="button" value="ESCUELAS" class="boton"/></a>
+                        
                     </div>
                     <div class="content-icon">
                         <i class="bx bx-store-alt" style="color: black"></i>
-                        <a href="servicios.html#comercio"><input type="button" value="COMERCIOS" class="boton"/></a>                     
+                        <a href="servicios.html#comercio"><input type="button" value="COMERCIOS" class="boton"/></a>
+                        
                     </div>
             </div>
             <section class="seccion3">
