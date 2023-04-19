@@ -82,6 +82,7 @@ h2 {
 }
 .navbar {
     grid-area: navbar;
+    z-index: 99;
 }
 .seccion1 {
     grid-area: seccion1;
@@ -98,9 +99,6 @@ h2 {
     grid-area: seccion3;
     padding: 10px;
 }
-
-/* seccion iconos */
-
 .seccion4 {
     grid-area: seccion4;
     width: 100%;
@@ -165,6 +163,7 @@ h3 {
 }
 .navbar {
     grid-area: navbar;
+    z-index: 99;
 }
 .seccion1-nosotros {
     grid-area: seccion1-nosotros;
@@ -213,6 +212,7 @@ p {
 }
 .navbar {
     grid-area: navbar;
+    z-index: 99;
 }
 .seccion1-servicio {
     grid-area: seccion1-servicio;
@@ -264,6 +264,7 @@ p {
 }
 .navbar {
     grid-area: navbar;
+    z-index: 99;
 }
 .seccion1-contacto {
     grid-area: seccion1-contacto;
