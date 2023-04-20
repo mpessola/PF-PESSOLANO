@@ -63,6 +63,10 @@ h2 {
     text-align: center;
     font-family: monospace;
     }
+.navbar-toggler-icon {
+    font-size: small;
+}
+
 
 /* ESTILOS INICIO */ 
 
@@ -93,7 +97,7 @@ h2 {
 .seccion2 {
     grid-area: seccion2;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .seccion3 {
     grid-area: seccion3;
