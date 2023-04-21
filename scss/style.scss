@@ -27,7 +27,7 @@ h4 {
     grid-area: navbar;
     background-image: linear-gradient(to right, #dfd0b1, #627e7e);
     display: flex;
-    height: 52px;
+    /* height: 52px; */
     font-size: 1.1em;
     color: grey;
     align-items: center;
@@ -231,7 +231,7 @@ p {
 }
 .seccion3-servicio {
     grid-area: seccion3-servicio;
-    padding: 20px 40px 20px 120px;
+    padding: 20px 40px 20px 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -245,7 +245,7 @@ p {
 }
 .seccion5-servicio {
     grid-area: seccion5-servicio;
-    padding: 20px 40px 20px 120px;
+    padding: 20px 40px 20px 60px;
     display: flex;
     align-items: center;
     justify-content: space-around;

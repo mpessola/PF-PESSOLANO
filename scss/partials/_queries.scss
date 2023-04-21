@@ -31,7 +31,7 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        grid-template-rows: 220px 52px 370px 180px 280px 800px 550px 100px;
+        grid-template-rows: 220px 52px 370px 100px 280px 650px 450px 100px;
         grid-template-areas:
         "cabecera cabecera cabecera cabecera"
         "navbar navbar navbar navbar"
@@ -75,7 +75,7 @@
     .grid-servicio {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        grid-template-rows: 220px 52px 60px 300px 300px 300px 300px 100px;
+        grid-template-rows: 220px 52px 80px 300px 300px 300px 300px 100px;
         grid-template-areas:
         "cabecera cabecera cabecera cabecera"
         "navbar navbar navbar navbar"
@@ -105,4 +105,110 @@
         width: 100%;
         margin: 10px;
     }
+}
+
+@media screen and (max-width: 390px) {
+    h1 {
+        margin-bottom: 0px;
+    }
+    h4 {
+        margin-bottom: 0px;
+    }
+    .navbar ul {
+        display: none;
+        position: absolute;
+        height: 100vh;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    label.menu {
+        display: block;
+        font-size: 1.5em;
+        color: white;
+        cursor: pointer;
+    }
+    #chek-menu:checked ~ul {
+        display: block;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 220px 52px 370px 150px 280px 800px 650px 100px;
+        grid-template-areas:
+        "cabecera cabecera cabecera cabecera"
+        "navbar navbar navbar navbar"
+        "seccion1 seccion1 seccion1 seccion1"
+        "seccion2 seccion2 seccion2 seccion2" 
+        "seccion3 seccion3 seccion3 seccion3"
+        "seccion4 seccion4 seccion4 seccion4"
+        "articulo articulo articulo articulo"
+        "footer-container footer-container footer-container footer-container";
+    }
+    .seccion4 {
+        flex-wrap: wrap;
+        width: center;
+    }
+    .articulo {
+        text-align: center;
+    }
+    .grid-nosotros {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 220px 52px 80px 420px 230px 160px 750px 100px; 
+        grid-template-areas:
+        "cabecera cabecera cabecera cabecera"
+        "navbar navbar navbar navbar"
+        "seccion1-nosotros seccion1-nosotros seccion1-nosotros seccion1-nosotros"
+        "seccion2-nosotros seccion2-nosotros seccion2-nosotros seccion2-nosotros"
+        "seccion3-nosotros seccion3-nosotros seccion3-nosotros seccion3-nosotros"
+        "seccion4-nosotros seccion4-nosotros seccion4-nosotros seccion4-nosotros"
+        "seccion5-nosotros seccion5-nosotros seccion5-nosotros seccion5-nosotros"
+        "footer-container footer-container footer-container footer-container";
+    }
+    p {
+        text-align: justify;
+    }
+    .seccion3-nosotros {
+        padding-top: 5px;
+    }
+    .seccion4-nosotros {
+        padding-top: 5px;
+    }
+    .grid-servicio {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 220px 52px 80px 300px 300px 300px 300px 100px;
+        grid-template-areas:
+        "cabecera cabecera cabecera cabecera"
+        "navbar navbar navbar navbar"
+        "seccion1-servicio seccion1-servicio seccion1-servicio seccion1-servicio"
+        "seccion2-servicio seccion2-servicio seccion2-servicio seccion2-servicio"
+        "seccion3-servicio seccion3-servicio seccion3-servicio seccion3-servicio"
+        "seccion4-servicio seccion4-servicio seccion4-servicio seccion4-servicio"
+        "seccion5-servicio seccion5-servicio seccion5-servicio seccion5-servicio"
+        "footer-container footer-container footer-container footer-container";
+    }
+    .grid-contacto {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 220px 52px 80px 900px 100px;
+        grid-template-areas:
+        "cabecera cabecera cabecera cabecera"
+        "navbar navbar navbar navbar"
+        "seccion1-contacto seccion1-contacto seccion1-contacto seccion1-contacto"
+        "seccion2-contacto seccion2-contacto seccion2-contacto seccion2-contacto"
+        "footer-container footer-container footer-container footer-container";
+    }
+    .seccion2-contacto {
+        flex-direction: column;
+        width: center;
+    }
+    .mapa {
+        width: 100%;
+        margin: 10px;
+    }  
+
 }
